@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install gcc cmake libpcap-dev libevent-dev openssl libssl-dev dnsutils git -y
+sudo apt-get install gcc cmake libpcap-dev openssl libssl-dev dnsutils git -y
 
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz
 tar -xvzf libsodium-1.0.17.tar.gz
