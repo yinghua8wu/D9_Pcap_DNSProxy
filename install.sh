@@ -22,13 +22,13 @@ cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
 sudo ./CMake_Build.sh
 cd ../../Release/
-sudo cp Pcap_DNSProxy /usr/bin/
+sudo cp -f Pcap_DNSProxy /usr/bin/
 sudo chmod +x /usr/bin/Pcap_DNSProxy
 cd ../Auxiliary/ExampleConfig/
 sudo mkdir /etc/Pcap_DNSProxy
-sudo cp Config.conf /etc/Pcap_DNSProxy/
-sudo cp WhiteList.txt /etc/Pcap_DNSProxy/
-sudo cp Pcap_DNSProxy.service /etc/systems/system/
+sudo cp -f Config.conf /etc/Pcap_DNSProxy/
+sudo cp -f WhiteList.txt /etc/Pcap_DNSProxy/
+sudo cp -f Pcap_DNSProxy.service /etc/systems/system/
 sudo systemctl daemon-reload
 sudo systemctl enable Pcap_DNSProxy
 sudo systemctl start Pcap_DNSProxy
