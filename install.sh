@@ -1,5 +1,4 @@
 #!/bin/bash
-
 sudo apt-get install gcc cmake libpcap-dev openssl libssl-dev dnsutils git -y
 
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz
@@ -19,7 +18,6 @@ sudo make && make install
 cd ..
 sudo rm -rf libevent-2.1.8-stable
 
-
 sudo git clone https://github.com/5high/Pcap_DNSProxy.git
 cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
@@ -35,3 +33,5 @@ sudo cp -f Pcap_DNSProxy.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable Pcap_DNSProxy
 sudo systemctl start Pcap_DNSProxy
+cd ../../../../
+sudo rm -rf Pcap_DNSProxy
