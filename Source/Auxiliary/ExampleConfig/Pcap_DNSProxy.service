@@ -29,7 +29,7 @@ LimitNOFILE=10240
 Restart=on-failure
 RestartSec=15s
 Type=forking
-WorkingDirectory=
+WorkingDirectory=/etc/Pcap_DNSProxy
 
 [Install]
 WantedBy=multi-user.target
