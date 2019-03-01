@@ -21,17 +21,17 @@ sudo rm -rf libevent-2.1.8-stable
 
 
 sudo git clone https://github.com/5high/Pcap_DNSProxy.git
-cd Pcap_DNSProxy/Source/Auxiliary/Scripts 
+cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
 sudo ./CMake_Build.sh
-cd ../../Release/
+cd Pcap_DNSProxy/Source/Release
 sudo cp -f Pcap_DNSProxy /usr/bin/
 sudo chmod +x /usr/bin/Pcap_DNSProxy
 cd ../Auxiliary/ExampleConfig/
 sudo mkdir /etc/Pcap_DNSProxy
 sudo cp -f Config.conf /etc/Pcap_DNSProxy/
 sudo cp -f WhiteList.txt /etc/Pcap_DNSProxy/
-sudo cp -f Pcap_DNSProxy.service /etc/systems/system/
+sudo cp -f Pcap_DNSProxy.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable Pcap_DNSProxy
 sudo systemctl start Pcap_DNSProxy
