@@ -9,6 +9,7 @@ sudo ./configure
 sudo make && make check
 sudo make install
 cd ..
+sudo rm -rf libsodium-1.0.17
 
 wget https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
 tar -xvzf libevent-2.1.8-stable.tar.gz
@@ -16,6 +17,8 @@ cd libevent-2.1.8-stable
 sudo ./configure
 sudo make && make install
 cd ..
+sudo rm -rf libevent-2.1.8-stable
+
 
 sudo git clone https://github.com/5high/Pcap_DNSProxy.git
 cd Pcap_DNSProxy/Source/Auxiliary/Scripts 
