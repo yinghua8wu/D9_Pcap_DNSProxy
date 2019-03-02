@@ -32,6 +32,7 @@ sudo git clone https://github.com/5high/Pcap_DNSProxy.git
 cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
 sudo ./CMake_Build.sh
+cd ../../../../
 cd Pcap_DNSProxy/Source/Release
 sudo systemctl stop Pcap_DNSProxy
 sudo cp -f Pcap_DNSProxy /usr/bin/
