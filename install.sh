@@ -23,6 +23,7 @@ cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
 sudo ./CMake_Build.sh
 cd Pcap_DNSProxy/Source/Release
+sudo systemctl stop Pcap_DNSProxy
 sudo cp -f Pcap_DNSProxy /usr/bin/
 sudo chmod +x /usr/bin/Pcap_DNSProxy
 cd ../Auxiliary/ExampleConfig/
