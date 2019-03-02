@@ -1,4 +1,11 @@
 #!/bin/bash
+#修改国内apt源
+echo -e "\033[32m正在修改apt源\033[0m"
+sudo echo 'deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi' > /etc/apt/sources.list
+sudo echo 'deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi' >> /etc/apt/sources.list
+sudo echo 'deb http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui' > /etc/apt/sources.list.d/raspi.list
+sudo echo 'deb-src http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui' >> /etc/apt/sources.list.d/raspi.list
+sudo apt-get update
 sudo apt-get -y install gcc cmake libpcap-dev openssl libssl-dev dnsutils git
 
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz
