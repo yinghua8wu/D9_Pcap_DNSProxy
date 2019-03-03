@@ -39,8 +39,9 @@ sudo cp -f Pcap_DNSProxy /usr/bin/
 sudo chmod +x /usr/bin/Pcap_DNSProxy
 cd ../Auxiliary/ExampleConfig/
 sudo mkdir /etc/Pcap_DNSProxy
-sudo cp -f Config.conf /etc/Pcap_DNSProxy/
+sudo cp -f Config.ini /etc/Pcap_DNSProxy/
 sudo cp -f WhiteList.txt /etc/Pcap_DNSProxy/
+sudo ldconfig
 
 echo -e "\033[32m正在配置开机自动运行\033[0m"
 sudo cp -f Pcap_DNSProxy.service /etc/systemd/system/
