@@ -40,7 +40,6 @@ sudo chmod +x /usr/bin/Pcap_DNSProxy
 cd ../Auxiliary/ExampleConfig/
 sudo mkdir /etc/Pcap_DNSProxy
 sudo cp -f Config.ini /etc/Pcap_DNSProxy/
-sudo cp -f Config.conf /etc/Pcap_DNSProxy/
 sudo cp -f WhiteList.txt /etc/Pcap_DNSProxy/
 sudo ldconfig
 
