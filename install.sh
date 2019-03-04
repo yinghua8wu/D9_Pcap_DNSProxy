@@ -16,6 +16,7 @@ sudo ./configure
 sudo make && make check
 sudo make install
 cd ..
+sudo rm -rf libpcap-1.9.0.tar.gz
 sudo rm -rf libpcap-libpcap-1.9.0
 
 echo -e "\033[32m正在下载安装libsodium\033[0m"
