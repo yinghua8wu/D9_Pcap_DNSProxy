@@ -6,7 +6,17 @@ sudo echo 'deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretc
 sudo echo 'deb http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui' > /etc/apt/sources.list.d/raspi.list
 sudo echo 'deb-src http://mirror.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui' >> /etc/apt/sources.list.d/raspi.list
 sudo apt-get update
-sudo apt-get -y install gcc cmake libpcap-dev openssl libssl-dev dnsutils git
+sudo apt-get -y install gcc cmake openssl libssl-dev dnsutils git
+
+echo -e "\033[32m正在下载安装libpcap\033[0m"
+wget https://github.com/the-tcpdump-group/libpcap/archive/libpcap-1.9.0.tar.gz
+tar -xvzf libpcap-1.9.0.tar.gz
+cd libpcap-1.9.0
+sudo ./configure
+sudo make && make check
+sudo make install
+cd ..
+sudo rm -rf libpcap-1.9.0
 
 echo -e "\033[32m正在下载安装libsodium\033[0m"
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz
