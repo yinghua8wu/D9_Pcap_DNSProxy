@@ -23,7 +23,7 @@ Description=Pcap_DNSProxy, a local DNS server based on WinPcap and LibPcap
 Wants=network-online.target
 
 [Service]
-ExecStartPre=/bin/sleep 30
+#ExecStartPre=/bin/sleep 30
 ExecStart=/usr/bin/Pcap_DNSProxy
 GuessMainPID=yes
 LimitNOFILE=10240
