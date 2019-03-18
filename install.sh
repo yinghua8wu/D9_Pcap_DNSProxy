@@ -59,7 +59,7 @@ sudo cp -f Update_WhiteList.sh /etc/Pcap_DNSProxy/
 sudo ldconfig
 
 echo -e "\033[32m正在配置开机自动运行\033[0m"
-cd ../Auxiliary/ExampleConfig/
+cd ../ExampleConfig/
 sudo cp -f Pcap_DNSProxy.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable Pcap_DNSProxy
