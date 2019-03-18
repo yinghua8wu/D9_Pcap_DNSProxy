@@ -53,9 +53,9 @@ sudo mkdir /etc/Pcap_DNSProxy
 sudo cp -f Config.ini /etc/Pcap_DNSProxy/
 sudo cp -f WhiteList.txt /etc/Pcap_DNSProxy/
 sudo cp -f Routing.txt /etc/Pcap_DNSProxy/
-cd ..
-sudo cp -f Script/Update_Routing.sh /etc/Pcap_DNSProxy/
-sudo cp -f Script/Update_WhiteList.sh /etc/Pcap_DNSProxy/
+cd ../Scripts
+sudo cp -f Update_Routing.sh /etc/Pcap_DNSProxy/
+sudo cp -f Update_WhiteList.sh /etc/Pcap_DNSProxy/
 sudo ldconfig
 
 echo -e "\033[32m正在配置开机自动运行\033[0m"
