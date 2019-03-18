@@ -67,5 +67,5 @@ cd ../../../../
 sudo rm -rf Pcap_DNSProxy
 
 cd /etc/Pcap_DNSProxy
-sudo bash /etc/Update_Routing.sh
-sudo bash /etc/Update_WhiteList.sh
+sudo bash Update_Routing.sh
+sudo bash Update_WhiteList.sh
