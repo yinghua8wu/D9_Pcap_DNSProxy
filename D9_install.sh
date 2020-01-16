@@ -33,7 +33,7 @@ cd ..
 sudo rm -rf libevent-2.1.8-stable*
 
 echo -e "\033[32m正在下载安装Pcap_DNSProxy\033[0m"
-sudo git clone https://gitee.com/yinghua8wu/D9_Pcap_DNSProxy.git
+sudo git clone https://github.com/yinghua8wu/D9_Pcap_DNSProxy.git
 cd Pcap_DNSProxy/Source/Auxiliary/Scripts
 sudo chmod 755 CMake_Build.sh
 sudo ./CMake_Build.sh
